@@ -17,11 +17,6 @@ public class LinguagemController {
     }
 
 
-    @GetMapping(value="/linguagem-preferida")
-    public String processaLinguagemPreferida() {
-        return "Oi, Java!";
-    }
-
     @GetMapping(value="/linguagens")
     public List<Linguagem> obterLinguagens() {
         List<Linguagem> linguagens = repositorio.findAll();
